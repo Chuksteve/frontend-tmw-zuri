@@ -29,7 +29,9 @@
                 </li>
                 <li>
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="pasword" required minlength="8">
+                    <input type="password" id="password" name="pasword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}"
+            title="Password must contain at least one number, one upper case and lower case letter, and have a length of 8 to 12"
+            autocomplete="off" required>
                     <ul>
                         <li class="below-password">
                             <input type="checkbox" id="remember" name="remember">
